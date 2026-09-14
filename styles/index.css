@@ -26,6 +26,11 @@ header h1 {
     padding: 1rem;
 }
 
+.notes-container p {
+    color: #8d8d8d;
+    text-align: center;
+}
+
 .note {
     border: #6d6d6d;
     border-style: solid;
@@ -51,6 +56,7 @@ header h1 {
     align-items: center;
     position: absolute;
     right: 10px;
+    bottom: 5px;
 }
 
 .add-icon a {
@@ -63,9 +69,5 @@ header h1 {
     .notes-container {
         display: flex;
         flex-direction: row;
-    }
-    .add-icon {
-        position: absolute;
-        bottom: 5px;
-    }    
+    }  
 }

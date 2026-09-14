@@ -38,7 +38,7 @@ export function EditNote(id, title, content ="") {
     const notes = GetNotes();
     const index = notes.findIndex((note) => note.id === id);
 
-    if (index !== -1) {
+    if (index === -1) {
         throw new Error("Không tìm thấy Note");
     }
 
