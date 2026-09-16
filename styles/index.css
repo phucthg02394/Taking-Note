@@ -3,8 +3,7 @@ header {
     flex-direction: row;
     align-items: center;
     gap: 0.5em;
-    border-bottom: #FFFFFF;
-    border-bottom-style: solid;
+    border-bottom: 1px solid #6d6d6d;
 }
 
 header img {

@@ -8,20 +8,14 @@
 </head>
 <body>
     <div class="header">
-        <h2>Note 1</h2>
+        <input id="note-title" type="text" placeholder="Tiêu đề" />
+        <span id="save-status"></span>
         <a href ="../index.html">
-            <img src="../assets/arrow.svg">
+            <img src="../assets/arrow.svg" alt="Quay lại">
         </a>
     </div>
-    <div class="notes-container">
-            <div class="note">
-                <h2>Title 1</h2>
-                <p>Content 1</p>
-            </div>
-            <div class="note">
-                <h2>Title 1</h2>
-                <p>Content 1</p>
-            </div>
-    </div>
+    <main class="note-editor">
+        <textarea id="note-content" placeholder="Nội dung"></textarea>
+    </main>
 </body>
 </html>

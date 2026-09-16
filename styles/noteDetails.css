@@ -5,12 +5,34 @@
     align-items: center;
     max-width: 100%;
     padding: 8px;
-    border-bottom: #FFFFFF;
-    border-bottom-style: solid;
+    border-bottom: 1px solid #6d6d6d;
 }
 
-.header h2 {
+#save-status {
+    position: absolute;
+    font-size: 0.7rem;
+    top: 40px;
+    padding-left: 5px;
+    color:#8d8d8d;
+}
+
+
+.header input {
+    flex: 1;
+    min-width: 0;
+    margin-right: 16px;
+    padding: 8px 0;
+    background-color: transparent;
     color: white;
+    font: inherit;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+
+.header input::placeholder {
+    color: #8d8d8d
 }
 
 .header img {
@@ -19,32 +41,26 @@
     color: white;
 }
 
-.notes-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 1rem;
+.notes-editor {
+    padding: 16px;
 }
 
-.note {
-    border: #6d6d6d;
-    border-style: solid;
-    border-radius: 6px;
-    min-width: 15rem;
-    min-height: 25rem;
-    max-width: 20rem;
-    max-height: 30rem;
+#note-content {
+    display: block;
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    box-sizing: border-box;
+    padding: 8px;
+    resize: vertical;
+    background-color: transparent;
+    color: #ffffff;
+    font: inherit;
+    font-size: 1rem;
+    line-height: 1.6;
+    border: none;
+    outline: none;
 }
 
-.note h2, p {
-    color: #FFFFFF;
-    padding-left: 5px;
-}
-
-@media (min-width: 500px) {
-    .notes-container {
-        display: flex;
-        flex-direction: row;
-    }
+#note-content::placeholder {
+    color: #8d8d8d;
 }
