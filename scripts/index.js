@@ -1,9 +1,8 @@
-import { GetNotes, DeleteNote } from "./storage.js"
+import { GetNotes } from "./storage.js"
 
 const notesContainer = document.querySelector(".notes-container");
 
 function renderNotes() {
-    notesContainer.innerHTML = "";
     const notes = GetNotes();
 
     if (notes.length === 0) {
@@ -23,21 +22,7 @@ function renderNotes() {
         const content = document.createElement("p");
         content.textContent = note.content;
 
-        const deleteIcon = document.createElement("img");
-        deleteIcon.src = "./assets/delete.svg";
-        deleteIcon.alt = "Xóa";
-        deleteIcon.className = "delete-btn";
-        deleteIcon.addEventListener("click", (e) => {
-            e.preventDefault();
-            e.stopPropagation();
-
-            if (window.confirm("Bạn có muốn xóa ghi chú này không ?")) {
-                DeleteNote(note.id);
-                renderNotes();
-            }
-        });
-
-        noteElement.append(title, content, deleteIcon);
+        noteElement.append(title, content);
         notesContainer.append(noteElement);
     });
 }
