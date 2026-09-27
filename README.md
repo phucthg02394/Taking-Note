@@ -5,7 +5,7 @@ Taking Note là một web ghi chú hoạt động trong phạm vi trình duyệt
 [Bấm vào đây để truy cập vào trang web](https://phucthg02394.github.io/Taking-Note/)
 ## Demo
 
-[Bấm vào đây để xem video demo](https://1drv.ms/v/c/45D6AD3AA5C3439C/IQBgb9Yg89s8Sq7-bvxxFkcbAUVR_AnxrHFlXMcVn3GuqCA?e=JBTJXl)
+[Bấm vào đây để xem video demo](https://1drv.ms/v/c/45D6AD3AA5C3439C/IQDe32wepKCzR4gvXwbfE64wATg-CogLPS4UgykkNsnjWLc?e=ea7uId)
 
 ## Ảnh chụp giao diện
 <figure>
